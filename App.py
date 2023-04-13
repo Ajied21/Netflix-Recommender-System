@@ -11,14 +11,14 @@ import requests,io
 import PIL.Image
 from urllib.request import urlopen
 
-with open('/home/ajied/Final_Project/Streamlit_App/Data/movie_data.json', 'r+', encoding='utf-8') as f:
+with open('movie_data.json', 'r+', encoding='utf-8') as f:
     movie_data = json.load(f)
-with open('/home/ajied/Final_Project/Streamlit_App/Data/movie_titles.json', 'r+', encoding='utf-8') as f:
+with open('movie_titles.json', 'r+', encoding='utf-8') as f:
     movie_titles = json.load(f)
 
-with open('/home/ajied/Final_Project/Streamlit_App/Data/tv_data.json', 'r+', encoding='utf-8') as f:
+with open('tv_data.json', 'r+', encoding='utf-8') as f:
     tv_data = json.load(f)
-with open('/home/ajied/Final_Project/Streamlit_App/Data/tv_titles.json', 'r+', encoding='utf-8') as f:
+with open('tv_titles.json', 'r+', encoding='utf-8') as f:
     tv_titles = json.load(f)
 
 def all_poster_fetcher(net_link):
