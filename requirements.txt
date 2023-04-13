@@ -2,6 +2,9 @@ streamlit
 numpy
 Pillow
 pandas
+json
 requests
 urllib3
-scikit-learn
+BeautifulSoup
+Image
+urlopen
