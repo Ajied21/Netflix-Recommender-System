@@ -4,6 +4,6 @@ Pillow
 pandas
 requests
 urllib3
-BeautifulSoup
+beautifulsoup4
 Image
 urlopen
