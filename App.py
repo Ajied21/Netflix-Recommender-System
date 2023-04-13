@@ -100,7 +100,7 @@ st.set_page_config(
 
 def run():
 
-    img1 = Image.open('/home/ajied/Final_Project/Streamlit_App/Image/Net.png')
+    img1 = Image.open('Net.png')
 
     img1 = img1.resize((750,350),)
 
