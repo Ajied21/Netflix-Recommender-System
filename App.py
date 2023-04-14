@@ -103,7 +103,7 @@ def run():
 
     img1 = Image.open(Path(__file__).parent/"Net.png")
 
-    img1 = img1.resize((750,350),)
+    img1 = img1.resize((650,250),)
 
     st.image(img1,use_column_width=False)
 
