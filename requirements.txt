@@ -7,4 +7,4 @@ urllib3
 beautifulsoup4
 Image
 urlopen
-Path
+pathlib
