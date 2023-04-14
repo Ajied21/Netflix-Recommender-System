@@ -15,4 +15,4 @@ textColor = '#A30000'
 # Font family for all text in the app, except code blocks
 # Accepted values (serif | sans serif | monospace) 
 # Default: "sans serif"
-font = "arial"
+font = "arial black"
