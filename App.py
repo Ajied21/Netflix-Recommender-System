@@ -11,14 +11,14 @@ import requests,io
 import PIL.Image
 from urllib.request import urlopen
 
-with open('Netflix-Recommender-System/Data/movie_data.json', 'r+', encoding='utf-8') as f:
+with open('Ajied21/Netflix-Recommender-System/Data/movie_data.json', 'r+', encoding='utf-8') as f:
     movie_data = json.load(f)
-with open('Netflix-Recommender-System/Data/movie_titles.json', 'r+', encoding='utf-8') as f:
+with open('Ajied21/Netflix-Recommender-System/Data/movie_titles.json', 'r+', encoding='utf-8') as f:
     movie_titles = json.load(f)
 
-with open('Netflix-Recommender-System/Data/tv_data.json', 'r+', encoding='utf-8') as f:
+with open('Ajied21/Netflix-Recommender-System/Data/tv_data.json', 'r+', encoding='utf-8') as f:
     tv_data = json.load(f)
-with open('Netflix-Recommender-System/Data/tv_titles.json', 'r+', encoding='utf-8') as f:
+with open('Ajied21/Netflix-Recommender-System/Data/tv_titles.json', 'r+', encoding='utf-8') as f:
     tv_titles = json.load(f)
 
 def all_poster_fetcher(net_link):
@@ -100,7 +100,7 @@ st.set_page_config(
 
 def run():
 
-    img1 = Image.open('Netflix-Recommender-System/Image/Net.png')
+    img1 = Image.open('Ajied21/Netflix-Recommender-System/Image/Net.png')
 
     img1 = img1.resize((750,350),)
 
