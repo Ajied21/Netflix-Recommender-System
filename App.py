@@ -10,16 +10,17 @@ from bs4 import BeautifulSoup
 import requests,io
 import PIL.Image
 from urllib.request import urlopen
+from pathlib import Path
 
-with open(r'Ajied21/Netflix-Recommender-System/Data/movie_data.json', 'r+', encoding='utf-8') as f:
-    movie_data = json.load(f)
-with open(r'Ajied21/Netflix-Recommender-System/Data/movie_titles.json', 'r+', encoding='utf-8') as f:
-    movie_titles = json.load(f)
+#with open(r'Ajied21/Netflix-Recommender-System/Data/movie_data.json', 'r+', encoding='utf-8') as f:
+movie_data = json.load(Path(__file__).parent/"Ajied21/Netflix-Recommender-System/Data/movie_data.json", 'r+', encoding='utf-8')
+#with open(r'Ajied21/Netflix-Recommender-System/Data/movie_titles.json', 'r+', encoding='utf-8') as f:
+movie_titles = json.load(Path(__file__).parent/"Ajied21/Netflix-Recommender-System/Data/movie_titles.json", 'r+', encoding='utf-8')
 
-with open(r'Ajied21/Netflix-Recommender-System/Data/tv_data.json', 'r+', encoding='utf-8') as f:
-    tv_data = json.load(f)
-with open(r'Ajied21/Netflix-Recommender-System/Data/tv_titles.json', 'r+', encoding='utf-8') as f:
-    tv_titles = json.load(f)
+#with open(r'Ajied21/Netflix-Recommender-System/Data/tv_data.json', 'r+', encoding='utf-8') as f:
+tv_data = json.load(Path(__file__).parent/"Ajied21/Netflix-Recommender-System/Data/tv_data.json", 'r+', encoding='utf-8')
+#with open(r'Ajied21/Netflix-Recommender-System/Data/tv_titles.json', 'r+', encoding='utf-8') as f:
+tv_titles = json.load(Path(__file__).parent/"Ajied21/Netflix-Recommender-System/Data/tv_titles.json", 'r+', encoding='utf-8')
 
 def all_poster_fetcher(net_link):
     ## Display Movie Poster
@@ -100,7 +101,7 @@ st.set_page_config(
 
 def run():
 
-    img1 = Image.open(r'Ajied21/Netflix-Recommender-System/Image/Net.png')
+    img1 = Image.open(Path(__file__).parent/"Ajied21/Netflix-Recommender-System/Image/Net.png")
 
     img1 = img1.resize((750,350),)
 
