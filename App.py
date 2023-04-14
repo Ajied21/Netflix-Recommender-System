@@ -13,14 +13,14 @@ from urllib.request import urlopen
 from pathlib import Path
 
 #with open(r'Ajied21/Netflix-Recommender-System/Data/movie_data.json', 'r+', encoding='utf-8') as f:
-movie_data = json.load(Path(__file__).parent/"Ajied21/Netflix-Recommender-System/Data/movie_data.json")
+movie_data = json.load(Path(__file__).parent/"Ajied21/Netflix-Recommender-System/Data/movie_data.json").open().read()
 #with open(r'Ajied21/Netflix-Recommender-System/Data/movie_titles.json', 'r+', encoding='utf-8') as f:
-movie_titles = json.load(Path(__file__).parent/"Ajied21/Netflix-Recommender-System/Data/movie_titles.json")
+movie_titles = json.load(Path(__file__).parent/"Ajied21/Netflix-Recommender-System/Data/movie_titles.json").open().read()
 
 #with open(r'Ajied21/Netflix-Recommender-System/Data/tv_data.json', 'r+', encoding='utf-8') as f:
-tv_data = json.load(Path(__file__).parent/"Ajied21/Netflix-Recommender-System/Data/tv_data.json")
+tv_data = json.load(Path(__file__).parent/"Ajied21/Netflix-Recommender-System/Data/tv_data.json").open().read()
 #with open(r'Ajied21/Netflix-Recommender-System/Data/tv_titles.json', 'r+', encoding='utf-8') as f:
-tv_titles = json.load(Path(__file__).parent/"Ajied21/Netflix-Recommender-System/Data/tv_titles.json")
+tv_titles = json.load(Path(__file__).parent/"Ajied21/Netflix-Recommender-System/Data/tv_titles.json").open().read()
 
 def all_poster_fetcher(net_link):
     ## Display Movie Poster
@@ -101,7 +101,7 @@ st.set_page_config(
 
 def run():
 
-    img1 = Image.open(Path(__file__).parent/"Ajied21/Netflix-Recommender-System/Image/Net.png")
+    img1 = Image.open(Path(__file__).parent/"Ajied21/Netflix-Recommender-System/Image/Net.png").open().read()
 
     img1 = img1.resize((750,350),)
 
